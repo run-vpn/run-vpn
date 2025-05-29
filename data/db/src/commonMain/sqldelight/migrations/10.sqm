@@ -1,0 +1,20 @@
+import kotlin.Boolean;
+
+DROP TABLE dbServer;
+CREATE TABLE dbServer (
+uuid TEXT NOT NULL PRIMARY KEY,
+host TEXT NOT NULL,
+protocol TEXT NOT NULL,
+source TEXT NOT NULL,
+isFavorite INTEGER AS Boolean DEFAULT 0 NOT NULL,
+isPublic  INTEGER AS Boolean DEFAULT 0 NOT NULL,
+
+-- nullable fields
+name TEXT,
+country TEXT,
+city TEXT,
+iso TEXT,
+latitude TEXT,
+longitude TEXT,
+lastConnectionTime INTEGER DEFAULT NULL
+);

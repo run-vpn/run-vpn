@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="welcome_our_vpn_desk">We comply with the law and will comply with all requests, block access and release logs at the request of government authorities. Our VPN is not for dirty deeds</string>
+    <string name="welcome_our_vpn">Our VPN and the law</string>
+    <string name="why_we_free">Why are we free?</string>
+    <string name="why_we_free_desk">The main expense of VPN and proxy services is servers, or rather the traffic passing through them. We decided to make it possible to use VPN completely free and without advertising if you allow other users to use you as a VPN/Proxy.         It is completely safe and your personal data remains safe, we will only allow other users to bypass the restrictions through you, but not to invade your data in any way. We will allow our clients to spend your traffic in an amount of no more than 10% of how much you spend ours.</string>
+    <string name="variant_free_desc">I want your traffic for free and I will give mine in return. I allow other users to use my connection</string>
+    <string name="variant_free">Free mode</string>
+    <string name="variant_paid">Paid mode</string>
+    <string name="variant_expired">Tariff expired</string>
+    <string name="variant_paid_desc">I don\'t want to share traffic, I\'d rather buy a subscription</string>
+    <string name="agree_and_continue">Agree and continue</string>
+    <string name="see_full_terms">Read all the rules</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="terms_and_use_modes">Terms and conditions of use</string>
+    <string name="www_vpn_run" translatable="false">www.VPN.run</string>
+    <string name="vpn_run" translatable="false">vpn.run</string>
+
+    <string name="traffic_over_title">Buy a subscription or change mode</string>
+    <string name="traffic_over_description">We can provide you with traffic for free if you are ready to provide your traffic too</string>
+    <string name="hint_we_dont_use_your_data">We do not invade your data in any way, your privacy is preserved</string>
+</resources>

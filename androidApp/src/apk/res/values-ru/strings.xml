@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="welcome_our_vpn_desk">Мы соблюдаем закон и будем исполнять все запросы, блокировать доступ и выдавать логи по запросу государственных органов. Наш VPN не для грязных дел</string>
+    <string name="welcome_our_vpn">Наш VPN и закон</string>
+    <string name="why_we_free">Почему мы бесплатны?</string>
+    <string name="why_we_free_desk">Основной расход у VPN и proxy-сервисов - это сервера, а точнее трафик проходящий через них.\n\nМы решили дать возможность пользоваться VPN полностью бесплатно и без рекламы, если вы разрешите другим пользователям использовать вас в качестве VPN/Proxy. \n\nЭто полностью безопасно и ваши личные данные остаются в безопасности, мы только дадим возможность другим пользователям обойти ограничения через вас, но не вторгаться в ваши данные никаким образом.\n\nМы дадим нашим клиентам потратить ваш трафик в количестве не более 10% от того, сколько вы потратите нашего.</string>
+
+    <string name="variant_free_desc">Хочу бесплатно ваш трафик и дам своего взамен. Разрешаю использовать мое соединение другим пользователям</string>
+    <string name="variant_free">Бесплатный режим</string>
+    <string name="variant_paid">Платный режим</string>
+    <string name="variant_paid_desc">Не хочу делиться трафиком, лучше куплю подписку</string>
+    <string name="agree_and_continue">Согласиться и продолжить</string>
+    <string name="see_full_terms">Все правила</string>
+    <string name="terms_of_use">Условия пользования</string>
+    <string name="terms_and_use_modes">Условия и режим использования</string>
+
+    <string name="traffic_over_title">Купите подпиську или поменяйте режим</string>
+    <string name="traffic_over_description">Мы можем вам предоставить трафик бесплатно, если вы готовы будете тоже предоставить свой трафик</string>
+    <string name="hint_we_dont_use_your_data">Мы не вторгаемся в ваши данные никак, ваша приватность сохраняется</string>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="welcome_our_vpn">Our VPN and the law</string>
+    <string name="welcome_our_vpn_desk">We comply with the law and will comply with all requests, block access and release logs at the request of government authorities. Our VPN is not for dirty deeds</string>
+    <string name="variant_free">Free mode</string>
+    <string name="variant_free_desc">Free mode, agree with some restrictions and ads</string>
+    <string name="variant_paid">Paid mode</string>
+    <string name="variant_paid_desc">I want full functionality and will buy a subscription</string>
+    <string name="agree_and_continue">Agree and continue</string>
+    <string name="see_full_terms">Read all the rules</string>
+    <string name="terms_of_use">Terms of Use</string>
+    <string name="terms_and_use_modes">Terms and conditions of use</string>
+
+    <string name="www_vpn_run" translatable="false">www.VPN.run</string>
+
+    <string name="traffic_over_title">Register to achieve benefits</string>
+    <string name="traffic_over_description">You can register to get access to faster servers and unlimited traffic</string>
+    <string name="hint_we_dont_use_your_data">We do not invade your data in any way, your privacy is preserved</string>
+
+</resources>

@@ -1,0 +1,7 @@
+CREATE TABLE dbSdkLog (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+date TEXT,
+status TEXT,
+host TEXT,
+desc TEXT
+);

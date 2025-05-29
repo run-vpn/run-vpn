@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Run VPN</string>
+
+    <string name="common_error">Error occurred. Please, try again!</string>
+    <string name="common_have_update_title">Update is ready!</string>
+    <string name="common_have_update_desc">We have app update! Please, do update for latest features.</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_install">Ok, install</string>
+
+    <string name="tab_home">Connect</string>
+    <string name="tab_servers">Servers</string>
+    <string name="tab_profile">Profile</string>
+    <string name="tab_settings">Settings</string>
+
+    <string name="vpn_action_disconnect">Disconnect</string>
+    <string name="vpn_action_connect">Connect</string>
+    <string name="vpn_action_retry">Retry</string>
+    <string name="vpn_action_pause">Pause</string>
+    <string name="vpn_status_connecting">Connecting</string>
+    <string name="vpn_status_disconnecting">Disconnecting</string>
+    <string name="vpn_status_connected">Connected</string>
+    <string name="vpn_status_disconnected">Disconnected</string>
+    <string name="vpn_status_error">Connection error</string>
+    <string name="vpn_status_disconnects_in_">Time until VPN disconnection: %s</string>
+    <string name="vpn_status_auto_disconnect_activated">Auto-disconnect is activated</string>
+    <string name="vpn_status_idle_reason_autodisconnect_title">The VPN was disconnected at %s</string>
+    <string name="vpn_status_idle_reason_autodisconnect_message">The auto-disconnect function was triggered</string>
+
+
+    <string name="vpn_notification_status_connecting">Connecting | www.vpn.run</string>
+    <string name="vpn_notification_status_disconnecting">Disconnecting | www.vpn.run</string>
+    <string name="vpn_notification_status_connected">Connected | www.vpn.run</string>
+    <string name="vpn_notification_status_disconnected">Disconnected | www.vpn.run</string>
+    <string name="vpn_notification_status_error">Connection error | www.vpn.run</string>
+    <string name="vpn_notification_status_pause">Paused | www.vpn.run</string>
+
+    <string name="search_bar_hint">Search</string>
+
+    <string name="current_server">Current server</string>
+    <string name="suggested_servers_not_show">Not show</string>
+    <string name="suggested_servers_favorite">Favourite</string>
+    <string name="suggested_servers_latest">Latest used</string>
+    <string name="suggested_servers_recommended">Recommended</string>
+    <string name="suggested_servers_auto">Smart (Auto)</string>
+
+    <string name="disconnected">Disconnected</string>
+    <string name="connecting">Connecting</string>
+    <string name="connected">Connected</string>
+    <string name="error_enter_server_name">Error. Enter server name!</string>
+    <string name="error_invalid_config_file">Invalid config file</string>
+    <string name="error_read_config_file">Can\'t read config file</string>
+    <string name="log_in">Log in</string>
+    <string name="log_in_desc">Register to get full access to all app features and free traffic</string>
+    <string name="support">Support</string>
+    <string name="support_desc">Help and feedback</string>
+    <string name="free_traffic">Free Traffic</string>
+    <string name="free_traffic_desc">Get free traffic</string>
+    <string name="referral_link">Referral link</string>
+    <string name="referral_link_desk">Share our app to earn bonuses</string>
+    <string name="traffic_module">Traffic module</string>
+    <string name="traffic_module_desc">View your module stats</string>
+    <string name="favourite_servers_description">Show favourite servers in main screen</string>
+    <string name="startup">Startup</string>
+    <string name="startup_desc">Auto start app when devise turn ON</string>
+    <string name="language">Language</string>
+    <string name="choose_language">Choose language</string>
+    <string name="lan">LAN</string>
+    <string name="always_on_vpn"><![CDATA[Always ON VPN & Kill Switch]]></string>
+    <string name="always_on_vpn_desc">Improve VPN stability</string>
+    <string name="protocol">Protocol</string>
+    <string name="smart_auto">Smart (auto)</string>
+    <string name="enable_accessibility">Enable Accessibility</string>
+    <string name="sites">Sites</string>
+    <string name="sites_desc">VPN enabled for all sites</string>
+    <string name="apps">Apps</string>
+    <string name="apps_desc">VPN enabled for all Apps</string>
+    <string name="my_proxy">My Proxy</string>
+    <string name="my_proxy_desc">Setup proxy of other services</string>
+    <string name="theme">Theme</string>
+
+
+    <!--email screen-->
+    <string name="email_screen_title">Введите вашу почту</string>
+    <string name="email_screen_subtitle">Мы вышлем код на указанный email для подтверждения входа или регистрации</string>
+    <string name="hint_email">Электронная почта</string>
+    <string name="button_login_or_register">Войти или Зарегистрироваться</string>
+    <string name="email_screen_hint">Вы можете использовать свой аккаунт</string>
+    <string name="email_screen_hint_uri">https://vpn.run</string>
+    <string name="continue_with_google">Продолжить через Google</string>
+    <string name="continue_with_facebook">Продолжить через Facebook</string>
+    <string name="continue_with_telegram">Продолжить через Telegram</string>
+
+    <!--confirm code screen-->
+    <string name="confirm_code">Код подтверждения</string>
+    <string name="confirm_code_sent">Мы отправили вам код на %1$s</string>
+    <string name="wrong_email_question">Вы ввели неверно почту?</string>
+    <string name="request_new_code">Отправить код</string>
+    <string name="request_new_code_in">Отправить код через: %1$s</string>
+    <string name="button_continue">Продолжить</string>
+
+    <!--traffic statistics-->
+    <string name="traffic_total">Total traffic</string>
+    <string name="traffic_upload">Upload</string>
+    <string name="traffic_download">Download</string>
+    <string name="free">Free</string>
+    <string name="subscription">"Subscription: "</string>
+    <string name="balance">Balance</string>
+    <string name="your_subscription">"Your tariff:"</string>
+    <string name="your_subscription_title">"Your subscription"</string>
+    <string name="your_subscription_subtitle">Info about your subscription</string>
+    <string name="tariff_paid">Paid</string>
+    <string name="variant_expired">Tariff expired</string>
+    <string name="tariff_traffic_per_traffic">Traffic per traffic</string>
+    <string name="you_activated">You activated subscription</string>
+    <string name="you_not_activated">You not activated subscription</string>
+    <string name="server_config_login">Login</string>
+    <string name="server_config_password">Password</string>
+    <string name="server_config_host">Host</string>
+    <string name="add_server">Add Server</string>
+    <string name="connect">Connect</string>
+    <string name="add">Add</string>
+    <string name="import_file">import</string>
+    <string name="choose_protocol">Choose protocol</string>
+    <string name="protocol_openvpn" translatable="false">OpenVPN</string>
+    <string name="protocol_wireguard" translatable="false">Wireguard</string>
+    <string name="protocol_ikev2" translatable="false">IkeV2</string>
+    <string name="protocol_xray" translatable="false">XRay</string>
+    <string name="protocol_oversocks" translatable="false">OverSocks</string>
+
+    <string name="connection_stats_downloaded">Total downloaded</string>
+    <string name="connection_stats_uploaded">Total uploaded</string>
+    <string name="connection_stats_duration">Duration</string>
+
+    <string name="connection_stats_last_ip">Previous IP</string>
+    <string name="traffic">Traffic</string>
+
+    <string name="connection_review_dialog_title">Session ended</string>
+    <string name="connection_review_dialog_subtitle">Rate the service,\nthis is important for us</string>
+    <string name="connection_review_dialog_button">Send review</string>
+
+    <string name="subscription_extend">Extend</string>
+    <string name="subscription_accum">Accumulate</string>
+
+    <string name="buy_sub_device_count">Devices count</string>
+    <string name="buy_sub_days_count">Days count</string>
+    <string name="buy_sub_buy">Buy $%s</string>
+    <string name="buy">Buy</string>
+    <string name="buy_sub_days">Days</string>
+    <string name="buy_sub_devices">Devices</string>
+
+    <string name="crypto_bs_title">Buy subscription</string>
+    <string name="crypto_bs_subtitle">Information about your subscription</string>
+    <string name="crypto_bs_show_qr_code">Show QR-code</string>
+
+    <!--servers list screen-->
+    <plurals name="server_format">
+        <item quantity="zero">%1$d server</item>
+        <item quantity="one">%1$d server</item>
+        <item quantity="two">%1$d servers</item>
+        <item quantity="many">%1$d servers</item>
+        <item quantity="few">%1$d servers</item>
+        <item quantity="other">%1$d servers</item>
+    </plurals>
+
+    <plurals name="days_format">
+        <item quantity="zero">days</item>
+        <item quantity="one">day</item>
+        <item quantity="two">days</item>
+        <item quantity="many">days</item>
+        <item quantity="few">days</item>
+        <item quantity="other">days</item>
+    </plurals>
+
+    <plurals name="devices_format">
+        <item quantity="zero">devices</item>
+        <item quantity="one">device</item>
+        <item quantity="other">devices</item>
+    </plurals>
+
+
+    <!--support screen-->
+    <string name="sup_faq_title">FAQ</string>
+    <string name="sup_faq_desc">Frequent questions</string>
+    <string name="sup_prob_title">Report a problem</string>
+    <string name="sup_prob_desc">Write to us if the application\nis not working correctly</string>
+    <string name="sup_rate_title">Rate the application</string>
+    <string name="sup_rate_desc">Tell us what you think about the\nVPN application and the quality of services</string>
+    <string name="sup_info_title">Information</string>
+    <string name="sup_info_desc">Learn more about the VPN app</string>
+    <string name="dev_unknown">unknown</string>
+    <string name="subscription_devices">Devices:</string>
+    <string name="subscription_dev_count">%1$s of %2$s</string>
+    <string name="subscription_ip">IP %1$s</string>
+    <string name="servers">Servers</string>
+    <string name="my_servers">My servers</string>
+    <string name="imported_server">Imported Server</string>
+    <string name="server_name">Server name</string>
+    <string name="add_server_desc">You can add your own Server to RunVPN</string>
+    <string name="load_file">Load file</string>
+    <string name="choose_config_file">Choose config file</string>
+    <string name="my_servers_desc">Edit or delete your imported servers</string>
+    <string name="add_new_server">Add new server</string>
+    <string name="server">%1$s server</string>
+    <string name="hint_no_imported_servers">You have not imported servers yet</string>
+
+    <string name="settings_common_settings">Common settings</string>
+    <string name="settings_common_settings_desc">Common settings of the app</string>
+    <string name="settings_additional_features">Additional features</string>
+    <string name="settings_additional_features_desc">Kill Switch, protocol and LAN</string>
+    <string name="settings_split_tunneling">Split tunneling</string>
+    <string name="settings_split_tunneling_desc">Split tunneling allows you to exclude certain applications or IP addresses from VPN traffic</string>
+    <string name="settings_handle_own_servers">Handle own servers</string>
+    <string name="settings_handle_own_servers_desc">Set up own servers</string>
+    <string name="test_connection">Test connection</string>
+    <string name="field_required">Field required</string>
+
+    <string name="test_connection_error">Connection error %1$s</string>
+    <string name="test_connection_success">Connection Success</string>
+    <string name="test_connection_connecting">Connecting…</string>
+    <string name="test_connection_retry">Retry connection</string>
+    <string name="your_ip_address">Your IP-address</string>
+
+    <string name="profile_state_logged_in_desc">Welcome! You have access to all functionality!</string>
+    <string name="profile_button_log_in">Sign In / Sign Up</string>
+    <string name="profile_button_log_out">Log Out</string>
+    <string name="profile_action_log_in">Log In into your account</string>
+    <string name="profile_action_log_in_desc">Log In into your account for have more features of RunVPN</string>
+    <string name="subscription_expiration_date">Expiration date: %s</string>
+    <string name="subscription_device_count">%s devices</string>
+    <string name="referral_program">Referral program</string>
+    <string name="referral_program_desc">Share with friends and earn crypto</string>
+    <string name="protocol_description_openvpn">protocol description</string>
+    <string name="protocol_description_wireguard">protocol description</string>
+    <string name="protocol_description_ikev2">protocol description</string>
+    <string name="protocol_description_xray">protocol description</string>
+    <string name="protocol_description_oversocks">protocol description</string>
+    <string name="invalid_url">Invalid Url</string>
+    <string name="enter_link">Enter link</string>
+    <string name="ping" translatable="false">%d ping</string>
+    <string name="ping_hint" translatable="false">Ping</string>
+    <string name="update">Update</string>
+    <string name="available_new_version">We released new version! Install!</string>
+    <string name="downloading_in_progress">Downloading in progress:</string>
+    <string name="new_version_downloaded">File downloaded. Update is ready.</string>
+    <string name="update_error_message">Something went wrong. %s</string>
+    <string name="update_is_available">Update is available</string>
+    <string name="description_update_available">We downloaded new version of app, click Update to install</string>
+    <string name="rate_the_service">Rate the service</string>
+    <string name="code_is_not_correct">Code is not correct</string>
+    <string name="save_changes">Save changes</string>
+    <string name="save">Save</string>
+    <string name="link_to_product_site">Link to product site</string>
+    <string name="developer">Developer</string>
+    <string name="build_number">Build number</string>
+    <string name="version">Version</string>
+    <string name="about_application">About Application</string>
+    <string name="actual_info">Actual info</string>
+
+    <string name="notification_channel_name">Using VPN</string>
+    <string name="notification_channel_desc">Notification about using VPN. Shows connection statistics.</string>
+    <string name="notification_disconnected_text">You are disconnected from VPN.</string>
+    <string name="excluded_ip_addresses">Excluded IP-addresses</string>
+    <string name="none">None</string>
+    <string name="excluded_applications">Excluded Applications</string>
+    <string name="all_apps_using_vpn">All apps using VPN</string>
+    <string name="exclude_selected_apps">Exclude selected apps</string>
+    <string name="only_selected_apps_using_vpn">Only selected apps using VPN</string>
+    <string name="selected_applications">Selected applications</string>
+    <string name="installed_applications">Installed applications</string>
+    <string name="when_vpn_connected">When VPN connected</string>
+    <string name="send">Send</string>
+    <string name="describe_your_problem">Describe your problem</string>
+    <string name="create_ticket">Create ticket</string>
+    <string name="hint_feedback_screen">Rate service, it is important for us</string>
+    <string name="check_connection">Check Connection</string>
+    <string name="initializing_xray">Initializing XRay</string>
+    <string name="initializing_ovpn">Initializing OpenVPN</string>
+    <string name="ok">OK</string>
+    <string name="checking">Checking</string>
+
+    <string name="error_no_server_response">Failed to connect to the server. Please try again later.</string>
+    <string name="error_unexpected_with_description">Something went wrong. The developers are already fixing the problem. %s</string>
+    <string name="error_invalid_response">Server error. Please try again later.</string>
+    <string name="error_no_internet">No internet connection. Check it and try again</string>
+    <string name="error_unexpected">Something went wrong. The developers are already fixing the problem.</string>
+    <string name="vpn_notification_status_pause_desc">VPN is turned off</string>
+    <string name="in_time">In</string>
+    <string name="retrying_to_connect_to_other_server">Retrying to connect to other server</string>
+
+    <!--traffic monitor screen-->
+    <string name="tfs_title">Traffic accumulation</string>
+    <string name="tfs_desc">Information about accumulated traffic</string>
+    <string name="tfs_device_all">Across all devices</string>
+    <string name="tfs_device_curr">Current device</string>
+    <string name="tfs_status">Status</string>
+    <string name="tfs_status_connecting">Connecting</string>
+    <string name="tfs_status_connected_simple">Connected. Simple mode 1Mb/S</string>
+    <string name="tfs_status_connected">Connected. Work in progress</string>
+    <string name="tfs_status_error">Connection error:</string>
+    <string name="tfs_status_error_connecting">Connecting 5.4.3.2....</string>
+    <string name="tfs_stat_title">Traffic accumulation statistics</string>
+    <string name="tfs_stat_all">All the time</string>
+    <string name="tfs_stat_today">Today</string>
+    <string name="tfs_stat_yesterday">Yesterday</string>
+    <string name="tfs_traff_used">You have spent our traffic:</string>
+    <string name="tfs_traff_give">You have given your traffic:</string>
+    <string name="tfs_traff_online">You were online:</string>
+    <string name="tfs_traff_online_time">%s min fom 1440 min</string>
+    <string name="tfs_traff_reconnect">Number of reconnections:</string>
+    <string name="tfs_traff_session">Average time per session:</string>
+    <string name="tfs_counter_format">"%02dh.%02dm.%02ds."</string>
+    <string name="tfs_traffic_output">You have provided traffic</string>
+    <string name="tfs_traffic_input">You used traffic</string>
+    <string name="tfs_stat_time">Current\nsession</string>
+    <string name="tfs_stat_speed">Speed</string>
+    <string name="tfs_stat_total">Traffic\nin this session</string>
+    <string name="tfs_look_logs">Look all logs</string>
+    <string name="tfs_logs_title">Sdk logs</string>
+    <string name="tfs_logs_desc">Information about Sdk logs</string>
+    <string name="tfs_sdk_total_traff">You have given total traffic:</string>
+    <string name="tfs_sdk_online">You were online:</string>
+    <string name="tfs_sdk_session">Average session time:</string>
+    <string name="auto_reconnect">Auto reconnect</string>
+    <string name="auto_reconnect_desc">When error occurred, VPN will automatically reconnect to next available server</string>
+
+    <string name="server_added_to_favorites">Server added to favorites</string>
+    <string name="traffic_at_today">Traffic at today</string>
+    <string name="usage_statistics">Usage statistics</string>
+    <string name="tactile_feedback">Tactile feedback on connect</string>
+    <string name="tactile_feedback_desc">Vibrate when successfully connected to VPN</string>
+    <string name="unsorted_server_group">Unsorted</string>
+    <string name="unknown_city">Unknown city</string>
+    <string name="ntf_disconnected_channel_desc">VPN is disconnected</string>
+
+    <string name="setting_hide_disconnect_notification">Hide \"Disconnected\" notification</string>
+    <string name="auto_connect">Auto connect</string>
+    <string name="auto_connect_desc">Automatically connect VPN when Application started and close</string>
+    <string name="login_with">Login with</string>
+    <string name="change">Change</string>
+    <string name="faq_setup_own_server">How to setup own server</string>
+
+    <!-- Widget info -->
+    <string name="widget_desc" translatable="false">VPN widget</string>
+    <string name="force_update_title">Force update!</string>
+    <string name="force_update_desc">To continue further work you need to update</string>
+    <string name="updated_issues_desc">If you are unable to update automatically, you can always download the latest version from the following links:</string>
+    <string name="update_issues">Update issues?</string>
+    <string name="can_not_be_skipped">Can\'t be skipped</string>
+    <string name="auto_disconnect">Auto disconnect</string>
+    <string name="auto_disconnect_desc">Automatically disconnect VPN in 10 minutes, choose variants coming soon</string>
+    <string name="not_implemented">This is not implemented right now. Stay tuned!</string>
+    <string name="qr_code">QR-code</string>
+    <string name="wireguard_interface">Interface</string>
+    <string name="private_key">Private key</string>
+    <string name="public_key_generated">Public key (Generated)</string>
+    <string name="address">Address</string>
+    <string name="port">Port</string>
+    <string name="dnsservers">DNS-servers</string>
+    <string name="mtu">MTU</string>
+    <string name="add_peer">Add peer</string>
+    <string name="peer">Peer</string>
+    <string name="public_key">Public key</string>
+    <string name="preshared_key">PreShared key</string>
+    <string name="endpoint">Endpoint</string>
+    <string name="your_password">Your password</string>
+    <string name="enter_your_password">Pleas, enter your password</string>
+    <string name="hint_password">Password</string>
+    <string name="action_enter_by_code">Auth by email code</string>
+    <string name="button_forgot_password">Forgot password?</string>
+    <string name="email_confirmed">Email confirmed!</string>
+    <string name="email_confirmed_desc">Осталось придумать пароль или вы можете попросить нас его сгенерировать и отправить на email</string>
+    <string name="new_password">New password</string>
+    <string name="confirm_password">Password confirmation</string>
+    <string name="generate_password_and_send_email">Generate password and send to email</string>
+    <string name="save_password_and_close">Save password and close</string>
+    <string name="incorrect_auth_combination">Incorrect password combination</string>
+    <string name="error_empty_password">Please, enter the password</string>
+    <string name="error_password_minimum">Minimum length is 6 symbold</string>
+    <string name="error_password_not_match">Password mismatch</string>
+
+    <string name="unsupported_format">Unsupported format</string>
+    <string name="username">Username</string>
+    <string name="paste_from_clipboard">Paste from Clipboard</string>
+    <string name="bs_support_title">Поддержка в Telegram</string>
+    <string name="copied_to_clipboard">Copied to clibboard</string>
+    <string name="open_telegram">Go to Telegram</string>
+    <string name="support_chat">Chat with support</string>
+    <string name="support_chat_desc">We provide support in English only. Write to us if something doesn’t work for you or suggest your improvement to us</string>
+    <string name="update_downloaded">Update downloaded</string>
+    <string name="new_version">New Version: %1$s</string>
+    <string name="your_version">Your Version: %1$s</string>
+    <string name="connect_on_network_enabled">Connect to VPN while connected to the Internet</string>
+    <string name="connect_on_network_enabled_desc">Automatic connection to VPN when connected to both Wi-FI or mobile network</string>
+    <string name="auto_connect_after_device_start_up">Automatic connection to VPN when device starts</string>
+    <string name="auto_connect_on_device_start_up_desc">Connecting to VPN after device startup</string>
+    <string name="settings_dns_title">Choose DNS-server</string>
+    <string name="settings_dns_desc">You can choose DNS-server or put your own</string>
+    <string name="settings_dns_empty_list">You can add your own DNS-server with button below.</string>
+    <string name="dns_server_name_placeholder">Server name</string>
+    <string name="dns_server_ip_placeholder">DNS-server IPv4 or IPv6</string>
+    <string name="creating_dns_server_dialog_title">Adding DNS-server</string>
+
+    <string name="error_invalid_ip_address">Invalid IP address</string>
+    <string name="error_cannot_be_empty">Field cannot be empty</string>
+
+    <string name="server_config_short_id">ShortId</string>
+    <string name="server_config_public_key">Public Key</string>
+    <string name="server_config_port">Port</string>
+    <string name="server_config_uuid">UUID</string>
+    <string name="other_settings">Other settings</string>
+    <string name="server_config_network_type">NetworkType</string>
+    <string name="server_config_security">Security (TLS)</string>
+    <string name="server_config_flow">Flow</string>
+    <string name="choose_suggested_server_mode">Suggested servers</string>
+    <string name="suggested_servers_mode">Suggested servers mode</string>
+
+    <string name="title_dialog_reconnect">Reconnect requested</string>
+    <string name="message_dialog_reconnect">Changes will be apply after reconnect. You can reconnect now row or later manually</string>
+    <string name="later">Later</string>
+    <string name="reconnect">Reconnect</string>
+    <string name="lan_desc">Allow to connect TV, printers and other devices in local network \n(not supported in OpenVPN)</string>
+    <string name="my_devices">My Devices</string>
+    <string name="buy_subscription">Buy subscription</string>
+    <string name="change_tariff">Switch tariff</string>
+    <string name="activate">Activate</string>
+    <string name="subscription_duration">Subscription duration: %s days</string>
+    <string name="activate_until">Activate until: %s</string>
+    <string name="not_activated_subscription">Not activated subscription</string>
+    <string name="subscription_expires">Subscription expires:</string>
+    <string name="permission_notifications_rationale_title">Allow permission</string>
+    <string name="permission_notifications_rationale_desc">We need permission for show notifications for correctly work of VPN background service. Please, allow it in app system settings.</string>
+    <string name="permission_camera_rationale_desc">We need permission for scan QR-code with Camera. Please, allow it in app system settings.</string>
+    <string name="open_settings">Open settings</string>
+    <string name="buy_subscription_title">Покупка подписки</string>
+    <string name="buy_subscription_desc">Продлите или купите подписку</string>
+    <string name="tariff_buy_cost">Цена покупки</string>
+    <string name="tariff_device_max">Кол-во устройств</string>
+    <string name="tariff_expire_in">Срок подписки</string>
+    <string name="buy_sub_cost">Cost</string>
+    <string name="rate_not_found">Rate with this params not found</string>
+    <string name="missing_funds">You are missing: %s</string>
+    <string name="last_online_with_time">last online %1$s</string>
+    <string name="last_online">Last online</string>
+    <string name="activate_subscription">Subscription activation</string>
+    <string name="activate_subscription_decs">Activate your subscription on your device</string>
+    <string name="choose_device">Select device</string>
+    <string name="choose_device_desc">Select the device on which you want to activate your subscription</string>
+    <string name="activation_code">Activation code</string>
+    <string name="activation_code_desc">Send a code to activate your subscription</string>
+    <string name="spec_file">Special file</string>
+    <string name="spec_file_desc">Special file with embedded subscription</string>
+    <string name="qr_code_desc">Send QR code to activate subscription</string>
+    <string name="your_devices">Your devices</string>
+    <string name="confirm_subscription">Subscription confirmation</string>
+    <string name="confirm_subscription_desc">More information about subscription</string>
+    <string name="type">Type</string>
+    <string name="model">Model</string>
+    <string name="ip" translatable="false">IP</string>
+    <string name="subcription_active_until">Subscription is active until</string>
+    <string name="confirm">Confirm</string>
+    <string name="refuse">Refuse</string>
+    <string name="activation_success_message">Subscription to device %1$s successfully activated to %2$s</string>
+    <string name="your_dns_servers">Your DNS-servers</string>
+    <string name="popular_dns_servers">Popular DNS-servers</string>
+    <string name="error_dns_already_created">Server with this IP address was already created</string>
+    <string name="invalid_certificate_file">Invalid certificate file</string>
+    <string name="choose_certificate">Choose certificate (.pem)</string>
+    <string name="hint_enter_your_email">Enter your email</string>
+    <string name="connection_settings">Connection settings</string>
+    <string name="connection_settings_desc">Setup connection settings for your needs</string>
+    <string name="about_device">About device</string>
+    <string name="about_device_desc">Information about your device</string>
+    <string name="device_name">Device name</string>
+    <string name="choose_subscription">Choose subscription</string>
+    <string name="deactivate_subscription">Deactivate subscription</string>
+    <string name="activate_subscription_promo">Activate subscription promo</string>
+    <string name="remove_device">Remove device</string>
+    <string name="reject">Reject</string>
+    <string name="remove_subscription_desc">Are you confirm removing subscription from this device?</string>
+    <string name="remove_device_desc">Are you confirm, deleting this device from your account?</string>
+    <string name="tariff_free_with_ads">Free, contains ADs</string>
+    <string name="tariff_free_for_traffic">Free for traffic</string>
+    <string name="source">Source</string>
+
+    <string name="subscription_period">Subscription period: %s</string>
+    <string name="subscription_activate_before">Activate before: %s</string>
+    <string name="subscription_status">Status:</string>
+    <string name="subscription_status_active">Subscription is active</string>
+    <string name="subscription_status_not_active">Subscription isn\'t active</string>
+    <string name="move_subscription_to_other_device">Move subscription to other device</string>
+    <string name="move_subscription">Move subscription</string>
+    <string name="subscription_not_selected">Not selected</string>
+    <string name="subscriptions_empty_for_activate">You have no subscriptions for activation</string>
+    <string name="subscription_success_buyed">Subscription successfully buyed!</string>
+    <string name="device_name_changed">Device name was changed successfully</string>
+
+    <string name="vpn_run" translatable="false">vpn.run</string>
+
+    <string name="title_share_with_friends">Share with your friends!</string>
+    <string name="apk_file">APK file</string>
+    <string name="recommended">Recommended</string>
+    <string name="share_file_desc">The file has already been downloaded and your referral code is embedded in it. You will receive 30% of all payments</string>
+    <string name="file_downloaded">File downloaded</string>
+    <string name="show_qr_code_to_friends">Show the QR code to your friends</string>
+    <string name="_site">%s site</string>
+    <string name="ref_link_to_site">Referral link to the site</string>
+    <string name="telegram_bot">Telegram bot</string>
+    <string name="telegram_bot_sends_file">The bot will send the file to the cart</string>
+    <string name="what_your_earn_from_friends">What will you get for your friends?</string>
+    <string name="what_you_earn_from_friends_desc">30% of all payments when installing an APK (we do not share commission with Google)</string>
+    <string name="profitable_terms">Profitable terms</string>
+    <string name="what_your_earn_from_friends_play_market">15% of all payments when installing from PlayMarket</string>
+    <string name="statistics">Statistics</string>
+    <string name="withdraw_money">Withdraw money</string>
+    <string name="share_file">Share file</string>
+    <string name="share_qr_code_to_friends_desc">Send it to your friends and let them also become the owners of the best VPN</string>
+    <string name="share_qr_code">Share QR-code</string>
+    <string name="share_link">Share link</string>
+    <string name="close">Close</string>
+    <string name="special_file">Special file</string>
+    <string name="activation_code_desc_dialog">Your activation code, which you can share with your friends or acquaintances</string>
+    <string name="usage_instructions">Usage instructions</string>
+    <string name="share">Share</string>
+    <string name="share_file_link">Share file link</string>
+    <string name="payment_system">Payment system</string>
+    <string name="replenishment_method">Replenishment method</string>
+    <string name="crypto_method_desc">The best payment system</string>
+    <string name="refill_balance">Refill balance</string>
+    <string name="refill_balance_desc">Renew or buy a subscription</string>
+    <string name="refill_amount">Refill amount</string>
+    <string name="your_balance_in_usd_">Your balance: $%1$s</string>
+    <string name="currency">Currency</string>
+    <string name="qr_code_to_refill_">QR code for payment %1$s %2$s</string>
+    <string name="function_not_implemented_yet">This function is not implemented yet. Stay tuned, we are actively working on the application!</string>
+    <string name="no_devices">No devices</string>
+    <string name="connection_status_can_t_be_provided">Connection status can\'t be provided</string>
+    <string name="complete">Complete</string>
+    <string name="reconnect_to_apply_changes_hint">Reconnect to server, to apply changes</string>
+    <string name="make_server_public">Make my server public</string>
+    <string name="make_server_public_desc">Your server will be available for all our clients</string>
+    <string name="enter_promo">Enter promo</string>
+    <string name="activate_promo_for_device">Activate promo for device</string>
+    <string name="enter_promo_hint">You have already activated subscription, the duration of your current subscription will be extended</string>
+    <string name="backend_connection_error">Connection error</string>
+    <string name="backend_connection_error_desc">We were unable to connect to our server. Check your internet connection.</string>
+    <string name="you_can_manually_update_apk_version">You can update the APK version manually.</string>
+    <string name="in_out_website">On our website</string>
+    <string name="direct_link">Direct link</string>
+    <string name="temp_buy_subs_hint">Buy monthly for $5</string>
+    <string name="devices_in_account">Devices in account</string>
+    <string name="active_subscriptions">Active subscriptions</string>
+    <string name="activate_by_code">Activate by code</string>
+    <string name="our_rules_and_usage_mode">Our terms and usage mode</string>
+    <string name="selected">Selected</string>
+    <string name="from">from</string>
+    <string name="available">available</string>
+    <string name="no_subscription">No subscription</string>
+    <string name="selected_devices">Selected devices %1$s</string>
+    <string name="done">Done</string>
+    <string name="remain_days">Days left until the end:</string>
+    <string name="subscription_valid_until">Subscription is valid until:</string>
+    <string name="choose_your_subscription">Select your subscription</string>
+    <string name="confirm_merge_desc">When you add a subscription to a device that already has an activated subscription, you will have additional time for the active</string>
+    <string name="confirm_activation">Activation confirmation</string>
+    <string name="give">Give</string>
+    <string name="list_is_empty">List is empty</string>
+    <string name="mark_on_map_you" translatable="false">You</string>
+    <string name="you">You</string>
+    <string name="subscription_activate_hint">In this section you select the device and subscription you want to activate for the selected device</string>
+    <string name="app_works_offline">Application works offline</string>
+    <string name="reconnecting_in__seconds">Reconnect after: %1$s seconds</string>
+    <string name="online">Online</string>
+    <string name="settings_vpn_kill_switch"><![CDATA[Постоянные VPN & Kill Switch]]></string>
+    <string name="settings_kill_switch_desc">Настройте действия RUN VPN</string>
+    <string name="server_filter_all">All servers</string>
+    <string name="server_filter_run_service">RUN-server</string>
+    <string name="server_filter_run_client">RUN-yours</string>
+    <string name="server_filter_custom">Yours</string>
+    <string name="servers_filter">Servers filter</string>
+    <string name="ip_" translatable="false">IP: %1$s</string>
+    <string name="no_added_servers">No servers added</string>
+    <string name="add_custom_servers_hint">Add your servers to quickly access your data. Just click the "My Servers" button below</string>
+    <string name="all_servers_desc">All servers</string>
+    <string name="run_servers_desc">Servers of RUN-VPN</string>
+    <string name="servers_run_clients_desc">Public servers of users</string>
+    <string name="your_servers">Your servers</string>
+    <string name="your_comment">Your comment</string>
+    <string name="retry">Retry</string>
+    <string name="idle">Idle</string>
+
+</resources>

@@ -1,0 +1,17 @@
+import kotlin.Boolean;
+
+CREATE TABLE dbDnsServer (
+id INTEGER PRIMARY KEY,
+name TEXT NOT NULL,
+description TEXT,
+ip TEXT NOT NULL,
+website TEXT,
+isEncrypted INTEGER AS Boolean NOT NULL DEFAULT 0,
+isStoreLogs INTEGER AS Boolean NOT NULL DEFAULT 0,
+isSecure INTEGER AS Boolean NOT NULL DEFAULT 0,
+isBlockingAdultContent INTEGER AS Boolean NOT NULL DEFAULT 0,
+isBlockingAds INTEGER AS Boolean NOT NULL DEFAULT 0,
+secondaryIP TEXT DEFAULT NULL
+);
+
+-- ALTER TABLE dbDnsServer ADD COLUMN secondaryIP TEXT DEFAULT NULL;

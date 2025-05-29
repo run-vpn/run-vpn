@@ -1,0 +1,31 @@
+package com.runvpn.app.data.device.domain.usecases.auth
+
+import com.runvpn.app.data.device.data.models.auth.AuthRequest
+import com.runvpn.app.data.device.data.models.auth.AuthResponse
+import com.runvpn.app.data.device.data.models.user.ContactTypeDto
+import com.runvpn.app.data.device.domain.AuthorizationRepository
+import com.runvpn.app.data.settings.domain.repositories.AppSettingsRepository
+
+class AuthByEmailUseCase(
+    private val authorizationRepository: AuthorizationRepository,
+    private val appSettingsRepository: AppSettingsRepository
+) {
+
+
+    suspend operator fun invoke(email: String, password: String): Result<AuthResponse> {
+        val result = authorizationRepository.login(
+            type = ContactTypeDto.EMAIL,
+            body = AuthRequest(
+                value = email,
+                password = password
+            )
+        )
+
+        if (result.isSuccess) {
+            appSettingsRepository.email = email
+            appSettingsRepository.appToken = result.getOrThrow().token
+        }
+
+        return result
+    }
+}

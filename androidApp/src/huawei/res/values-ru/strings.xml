@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="welcome_our_vpn">Наш VPN и закон</string>
+    <string name="welcome_our_vpn_desk">Мы соблюдаем закон и будем исполнять все запросы, блокировать доступ и выдавать логи по запросу государственных органов. Наш VPN не для грязных дел</string>
+    <string name="variant_free">Бесплатный режим</string>
+    <string name="variant_free_desc">Я согласен использовать приложение с некоторыми ограничениями и просмотром рекламы</string>
+    <string name="variant_paid">Платный режим</string>
+    <string name="variant_paid_desc">Хочу использовать все функции и куплю подписку</string>
+    <string name="agree_and_continue">Согласиться и продолжить</string>
+    <string name="see_full_terms">Ознакомиться со всеми правилами</string>
+    <string name="terms_of_use">Условия пользования</string>
+    <string name="terms_and_use_modes">Условия и режим использования</string>
+
+
+    <string name="traffic_over_title">Купите подпиську или поменяйте режим</string>
+    <string name="traffic_over_description">Мы можем вам предоставить трафик бесплатно, если вы готовы будете тоже предоставить свой трафик</string>
+    <string name="hint_we_dont_use_your_data">Мы не вторгаемся в ваши данные никак, ваша приватность сохраняется</string>
+
+</resources>

@@ -1,0 +1,104 @@
+import kotlin.Boolean;
+-- Server structure on 29.05.2024
+-- @Serializable
+   -- data class Server(
+   --     val uuid: String,
+   --     val host: String,
+   --     val protocol: ConnectionProtocol,
+   --     val source: ServerSource,
+   --     val isFavorite: Boolean,
+   --     val isPublic: Boolean,
+   --
+   --     //Nullable Fields
+   --     val name: String?,
+   --     val country: String?,
+   --     val city: String?,
+   --     val iso: String?,
+   --     val latitude: String?,
+   --     val longitude: String?,
+   --     val config: Map<String, String?>?
+   -- ) {
+   --     val lastConnectionTime: Long? = null
+   --     val hasValidCountry = !(country.isNullOrEmpty() || country == "undefined")
+   --
+   --     override fun toString(): String {
+   --         return host
+   --     }
+   -- }
+CREATE TABLE dbServer (
+uuid TEXT NOT NULL PRIMARY KEY,
+host TEXT NOT NULL,
+protocol TEXT NOT NULL,
+source TEXT NOT NULL,
+isFavorite INTEGER AS Boolean DEFAULT 0 NOT NULL,
+isPublic  INTEGER AS Boolean DEFAULT 0 NOT NULL,
+
+-- nullable fields
+name TEXT,
+country TEXT,
+city TEXT,
+iso TEXT,
+latitude TEXT,
+longitude TEXT,
+lastConnectionTime INTEGER DEFAULT NULL
+);
+
+selectAll:
+SELECT * FROM dbServer;
+
+getById:
+SELECT * FROM dbServer WHERE uuid=?1;
+
+clearServers:
+DELETE  FROM dbServer WHERE 1;
+
+addServer:
+INSERT OR REPLACE INTO dbServer (uuid, host, protocol, source, isFavorite, isPublic, name, country, city, iso, latitude, longitude)  VALUES ?;
+
+upsert {
+  UPDATE dbServer
+  SET
+      host = :host,
+      protocol = :protocol,
+      source = :source,
+      isFavorite = :isFavorite,
+      isPublic = :isPublic,
+      name = :name,
+      country = :country,
+      city = :city,
+      iso = :iso,
+      latitude = :latitude,
+      longitude = :longitude
+  WHERE uuid = :uuid;
+
+  INSERT OR REPLACE INTO dbServer (uuid, host, protocol, source, isFavorite, isPublic, name, country, city, iso, latitude, longitude)
+  VALUES (:uuid,:host,:protocol,:source,:isFavorite,:isPublic,:name,:country,:city,:iso,:latitude, :longitude);
+}
+
+updateServerName:
+UPDATE dbServer SET name =?2 WHERE uuid=?1;
+
+updateServerLastConnectionTime:
+UPDATE dbServer SET lastConnectionTime =?2 WHERE uuid=?1;
+
+updateServerIsFavourite:
+UPDATE dbServer SET isFavorite =?2 WHERE uuid=?1;
+
+updateServerIsPublic:
+UPDATE dbServer SET isPublic =?2 WHERE uuid=?1;
+
+deleteServer:
+DELETE FROM dbServer WHERE uuid=?;
+
+selectIds:
+SELECT uuid FROM dbServer;
+
+-- addServerWithConfig:
+-- INSERT OR REPLACE INTO server(externalId, name, host, ip, load, iso, country, city, mapCoordinates, favourite, protocol)VALUES ?;
+
+-- serverWithConfig:
+-- SELECT * FROM dbServer s LEFT JOIN dbCustomVpnConfig c ON s.serverId = c.server_id;
+
+
+lastRowId:
+SELECT last_insert_rowid();

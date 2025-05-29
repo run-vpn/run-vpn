@@ -1,0 +1,1 @@
+detekt --report html:code_quality/reports/report.html --config code_quality/config.yml --build-upon-default-config --excludes "**/build/**"

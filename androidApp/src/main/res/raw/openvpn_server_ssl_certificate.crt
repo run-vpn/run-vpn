@@ -1,0 +1,32 @@
+== Chain0 == 
+Version:   3
+Serial Number:   caf892ad
+SubjectDN:   CN=51.195.196.66
+IssuerDN:   CN=OpenVPN Web CA 2023.12.13 11:00:43 MSK vpn110.vpnserv.net
+Get not before:   Tue Dec 12 14:00:50 GMT+03:00 2023
+Get not after:   Thu Dec 12 14:00:50 GMT+03:00 2024
+Sig ALG name:   SHA256withECDSA
+Signature:   306502304cc06d8f8824e9351af092ab8788fb65740e94f1a12d2b9afb9aa72b14724d6ee3ab65b3a72fc7f49299a39bea6ad9050231009ca614c1184ca6dc077920ff86a14185b775677063475897ad282146e06db751804758c063ae865e1bc4c7653774fea4
+Public key:
+30 76 30 10 06 07 2a 86 48 ce 3d 02 01 06 05 2b 81 04 00 22
+03 62 00 04 11 ab 17 e1 df b1 41 1f 61 fe 3d 9c 15 92 76 b8
+e1 65 60 5a ce c5 e1 8b 58 37 79 14 46 5e 11 77 96 cd b3 3b
+68 6c 1f 1c e2 c3 6e 9a fa f8 af 88 fb c7 c0 97 e4 44 cd 61
+f4 a6 c6 83 4a d5 18 0b 1f f9 ea 97 de 46 35 3c 1e 35 ce 78
+b5 81 14 94 7a 60 bc a6 e3 7b d4 8d ca 04 43 85 25 c4 0b 08
+== Chain1 == 
+Version:   3
+Serial Number:   657964ab
+SubjectDN:   CN=OpenVPN Web CA 2023.12.13 11:00:43 MSK vpn110.vpnserv.net
+IssuerDN:   CN=OpenVPN Web CA 2023.12.13 11:00:43 MSK vpn110.vpnserv.net
+Get not before:   Tue Dec 12 14:00:43 GMT+03:00 2023
+Get not after:   Sat Dec 10 14:00:43 GMT+03:00 2033
+Sig ALG name:   SHA256withECDSA
+Signature:   3064023025d2727584b48f8dfec4eca137c87d618a1e76276944328e470c61165638bb38cf3179bd0ccfbb0873062771a110c89c0230145754e1fbb9c60f5aa50cb9fe5923c6dda5aa46bdfed53ca22cc9f25bf99fe900f5ef12308b560c05f855855bcc1f95
+Public key:
+30 76 30 10 06 07 2a 86 48 ce 3d 02 01 06 05 2b 81 04 00 22
+03 62 00 04 89 6d 56 01 49 07 70 37 49 be af 30 a6 1f f8 0e
+ae de 09 d9 fc 9c 20 ca d8 b7 53 86 b5 18 ed 08 5b 8c 92 a4
+cc 5f 84 e5 6d 80 38 06 c4 bf a3 d2 fe 0d f7 aa aa 12 1d ab
+7f 5c 2d a8 bf 6f 2c 3f 19 8c e1 c5 cf 8d 05 f6 9b 3f 93 d6
+68 10 1d a5 af e9 ff b1 46 83 0c 4d 91 04 49 90 91 1c 43 e7

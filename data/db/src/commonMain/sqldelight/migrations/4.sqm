@@ -1,0 +1,13 @@
+import kotlin.Boolean;
+
+DELETE FROM dbServer;
+
+DROP TABLE dbOpenVpnConfig;
+
+CREATE TABLE dbCustomVpnConfig (
+uniqueUpdateKey TEXT NOT NULL,
+server_id TEXT NOT NULL,
+confKey TEXT NOT NULL,
+confValue TEXT,
+FOREIGN KEY (server_id) REFERENCES dbServer(serverId) ON DELETE CASCADE
+);

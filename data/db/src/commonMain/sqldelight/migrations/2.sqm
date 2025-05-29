@@ -1,0 +1,29 @@
+import kotlin.Boolean;
+
+DROP TABLE dbServer;
+CREATE TABLE dbServer (
+serverId TEXT NOT NULL PRIMARY KEY,
+name TEXT,
+host TEXT NOT NULL,
+ip TEXT,
+load INTEGER,
+iso TEXT,
+country TEXT,
+city TEXT,
+mapCoordinates TEXT,
+favourite INTEGER AS Boolean DEFAULT 0,
+isCustom  INTEGER AS Boolean DEFAULT 0,
+protocol TEXT NOT NULL,
+lastConnectionTime INTEGER DEFAULT NULL
+);
+
+DROP TABLE dbOpenVpnConfig;
+
+CREATE TABLE dbOpenVpnConfig (
+server_id TEXT NOT NULL PRIMARY KEY,
+config TEXT,
+username TEXT,
+password TEXT,
+FOREIGN KEY (server_id) REFERENCES dbServer(serverId) ON DELETE CASCADE
+);
+

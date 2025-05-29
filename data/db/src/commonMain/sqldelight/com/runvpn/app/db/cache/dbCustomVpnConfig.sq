@@ -1,0 +1,27 @@
+
+CREATE TABLE dbCustomVpnConfig (
+uniqueUpdateKey TEXT NOT NULL PRIMARY KEY,
+serverUuid TEXT NOT NULL,
+confKey TEXT NOT NULL,
+confValue TEXT,
+FOREIGN KEY (serverUuid) REFERENCES dbServer(uuid) ON DELETE CASCADE
+);
+
+selectAllConfigs:
+SELECT * FROM dbCustomVpnConfig;
+
+selectByServerId:
+SELECT * FROM  dbCustomVpnConfig WHERE serverUuid = ?;
+
+addConfig:
+INSERT OR REPLACE INTO dbCustomVpnConfig(uniqueUpdateKey, serverUuid, confKey, confValue) VALUES ?;
+
+updateConfig:
+UPDATE dbCustomVpnConfig SET  confValue=?3 WHERE serverUuid=?1 AND confKey=?2;
+
+upsert {
+    UPDATE dbCustomVpnConfig SET confValue =:confValue WHERE uniqueUpdateKey=:uniqueUpdateKey;
+
+    INSERT OR REPLACE INTO dbCustomVpnConfig (uniqueUpdateKey, serverUuid, confKey, confValue)
+    VALUES (:uniqueUpdateKey,:serverId, :confKey, :confValue);
+}

@@ -1,0 +1,1 @@
+ALTER TABLE dbServer ADD COLUMN lastConnectionTime INTEGER DEFAULT NULL;

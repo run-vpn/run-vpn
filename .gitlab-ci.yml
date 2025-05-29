@@ -1,0 +1,104 @@
+image: inovex/gitlab-ci-android
+
+stages:
+  - lint
+  - detekt
+  # - build
+
+variables:
+  ART_READ_PROXY_USER: "-Pmg_art_user_r_proxy_android=$ARTIFACTORY_READ_PROXY_USER"
+  ART_READ_PROXY_PASSWORD: "-Pmg_art_pass_r_proxy_android=$ARTIFACTORY_READ_PROXY_PASSWORD"
+  ART_PROXY_URL: "-Pmg_art_url_proxy_android=$ARTIFACTORY_PROXY_URL"
+  KST_APK_ALIAS: "-Prls_keystore_alias=$KEYSTORE_APK_ALIAS"
+  KST_APK_PASSWORD: "-Prls_keystore_password=$KEYSTORE_APK_PASSWORD"
+  KST_APK_KEY_PASSWORD: "-Prls_key_password=$KEYSTORE_APK_PASSWORD"
+  KST_APK_FILENAME: "-Prls_keystore_file=$KEYSTORE_APK_FILENAME"
+  GRADLE_PROPS: "$ART_PROXY_URL $ART_READ_PROXY_USER $ART_READ_PROXY_PASSWORD"
+  APK_RELEASE_GRADLE_PROPS: "$KST_APK_ALIAS $KST_APK_PASSWORD $KST_APK_KEY_PASSWORD $KST_APK_FILENAME"
+
+before_script:
+  - export GRADLE_USER_HOME=$(pwd)/.gradle
+  - chmod +x ./gradlew
+  - export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+
+cache:
+  key: ${CI_PROJECT_ID}
+  paths:
+    - .gradle/
+
+LintDebug:
+  stage: lint
+  tags:
+    - vpn
+  interruptible: true
+  when: manual
+  script:
+    - ./gradlew -Pci --console=plain :androidApp:lintProxyApkDebug $GRADLE_PROPS
+  except:
+    - tags
+  artifacts:
+    when: always
+    expire_in: 1 week
+    paths:
+      - androidApp/build/reports/lint-*.xml
+
+LintRelease:
+  stage: lint
+  tags:
+    - vpn
+  interruptible: true
+  script:
+    - ./gradlew -Pci --console=plain :androidApp:lintProxyApkRelease $GRADLE_PROPS
+  only:
+    - tags
+  artifacts:
+    when: always
+    expire_in: 1 week
+    paths:
+      - androidApp/build/reports/lint-*.xml
+
+Detekt:
+  stage: detekt
+  tags:
+    - vpn
+  interruptible: true
+  script:
+    - ./gradlew -Pci --console=plain detekt $GRADLE_PROPS
+
+# BuildDebug:
+  # stage: build
+  # tags:
+  #   - vpn
+  # interruptible: true
+  # script:
+  #   - ./gradlew -Pci --console=plain :androidApp:assembleProxyApkDebug -Pbuildnum="$CI_JOB_ID" $GRADLE_PROPS
+  # except:
+  #   - tags
+#  artifacts:
+#    name: "$CI_JOB_STAGE-$CI_COMMIT_REF_NAME"
+#    paths:
+#      - androidApp/build/outputs/apk/proxyApk/debug/androidApp-proxy-apk-debug.apk
+#    expose_as: 'android_proxy_debug'
+#    expire_in: 1 day
+
+# BuildRelease:
+  # stage: build
+  # tags:
+  #   - vpn
+  # interruptible: true
+  # script:
+  #   - curl --silent "https://gitlab.com/gitlab-org/incubation-engineering/mobile-devops/download-secure-files/-/raw/main/installer" | bash
+  #   - ./gradlew -Pci --console=plain :androidApp:assembleProxyApkRelease -Pbuildnum="$CI_JOB_ID" $GRADLE_PROPS $APK_RELEASE_GRADLE_PROPS
+  #   - ./gradlew -Pci --console=plain :androidApp:assembleNoproxyApkRelease -Pbuildnum="$CI_JOB_ID" $GRADLE_PROPS $APK_RELEASE_GRADLE_PROPS
+  #   - ls androidApp/
+  # only:
+  #   - tags
+  # artifacts:
+  #   name: "$CI_JOB_STAGE-$CI_COMMIT_REF_NAME"
+  #   paths:
+  #     - androidApp/build/outputs/apk/proxy/release/*.apk
+  #     - androidApp/build/outputs/mapping/proxyApkRelease/mapping.txt
+  #     - androidApp/build/outputs/mapping/noproxyApkRelease/mapping.txt
+  #     - androidApp/proxyApk/release/*.apk
+  #     - androidApp/noproxyApk/release/*.apk
+  #   expire_in: never

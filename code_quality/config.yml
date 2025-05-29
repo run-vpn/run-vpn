@@ -1,0 +1,67 @@
+naming:
+  ClassNaming:
+    excludes: [ '**/build/**' ]
+  VariableNaming:
+    excludes: [ '**/IPRange.kt', '**/build/**' ]
+  FunctionNaming:
+    functionPattern: '[a-zA-Z][a-zA-Z0-9]*'
+    ignoreAnnotated: [ 'Composable' ]
+  MatchingDeclarationName:
+    active: true
+    excludes: [ '**.android.kt', '**.ios.kt' ]
+exceptions:
+  active: false
+potential-bugs:
+  excludes: [ '**/IPRange.kt', '**/LongExtensions.kt' ]
+style:
+  ThrowsCount:
+    max: 3
+  UnusedImports:
+    active: true
+  UnusedPrivateProperty:
+    active: false
+    allowedNames: 'commonMain|commonTest|iosMain|androidMain'
+  UnusedPrivateMember:
+    ignoreAnnotated: [ 'Preview', 'WidgetPreview', 'ScreenPreview' ]
+  MagicNumber:
+    active: false
+  ForbiddenComment:
+    allowedPatterns: 'TODO: Remove once KTIJ-19369 is fixed'
+  ReturnCount:
+    max: 5
+  LoopWithTooManyJumpStatements:
+    excludes: [ '**/XRayService.kt', '**/WireGuardService.kt', '**/OverSocksVpnService.kt' ]
+  WildcardImport:
+    excludes: [ '**/_DeviceApiImpl.kt', '**/_SubscriptionsApiImpl.kt' ]
+  MaxLineLength:
+    excludes: [ '**/TmpXrayConfigJson.kt' ]
+  DestructuringDeclarationWithTooManyEntries:
+    excludes: [ '**/ScrollbarExtension.kt' ]
+complexity:
+  excludes: [ '**/IPRange.kt', '**/NetworkUtils.kt' ]
+  LongMethod:
+    ignoreAnnotated: [ 'Composable' ]
+    excludes: [ '**/SharedSDK.kt', '**/DefaultRootComponent.kt' ]
+  LongParameterList:
+    constructorThreshold: 15
+    functionThreshold: 15
+    excludes: [ '**/Default*Component.kt' , '**/AppTexField.kt' ]
+  TooManyFunctions:
+    thresholdInClasses: 15
+    thresholdInInterfaces: 15
+    ignorePrivate: true
+    excludes: [ '**/settings/DI.kt', '**/subscription/DI.kt', '**/DefaultXrayVpnServerConfigComponent.kt','**/FakeXrayVpnServerConfigComponent.kt','**/XrayVpnServerConfigComponent.kt' ]
+  CyclomaticComplexMethod:
+    threshold: 30
+    excludes: [ '**/HomeScreen.kt', '**/RootView.kt' ]
+empty-blocks:
+  EmptyFunctionBlock:
+    active: false
+performance:
+  ForEachOnRange:
+    active: false
+comments:
+  UndocumentedPublicClass:
+    active: false
+  UndocumentedPublicFunction:
+    ignoreAnnotated: [ 'Composable' ]
